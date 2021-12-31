@@ -1,9 +1,9 @@
-import './App.css';
+import './App.scss';
 
 function About() {
   return (
-    <div className="About">
-      
+    <div className='About'>
+      <div className='Greeting'>HIRE ME</div>
     </div>
   );
 }

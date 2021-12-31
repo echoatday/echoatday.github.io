@@ -30,9 +30,8 @@
 
 .Header {
   background-color: #DDE;
-  box-shadow: 0.15em 0.15em 0 #04A;
   padding-left: 1em; padding-right: 1em;
-  padding-top: 0.4em; padding-bottom: 0.5em;
+  padding-top: 0.5em; padding-bottom: 0.5em;
   height: 2em;
   width: 100%;
   display: flex;
@@ -44,15 +43,43 @@
   z-index: 999;
 }
 
+.HeaderShadow {
+  background-color: #04A;
+  height: 2em;
+  width: 100vw;
+  position: fixed;
+  top: 0.15em;
+  left: 0.15em;
+  z-index: 997;
+}
+
 .Contact {
-  background-color: #AAA;
+  background-color: #DDE;
+  background: repeating-linear-gradient( -45deg, #DDE, #DDE 5px, #D5D5E5 5px, #D5D5E5 10px );
   box-shadow: 0.15em 0.15em 0 #04A;
-  width: 10em;
+  width: 8em;
   height: 6em;
   position: fixed;
   right: 0;
-  top: 2em;
-  z-index: -1;
+  top: -4em;
+  z-index: 998;
+  transition: transform 1s;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+
+  &.ContactRevealed {
+    transform: translateY(5.95em);
+  }
+}
+
+.ContactLink {
+  padding: 0 1.66em;
+  font-size: 60%;
+  text-decoration: none;
+  color: #426;
+  font-weight: 700;
+  text-align: right;
 }
 
 .Title {
@@ -61,13 +88,25 @@
   font-weight: 700;
 }
 
-/* about/projects styles */
+/* about */
 
 .About {
   background-color: #779;
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.Greeting {
+  font-size: 80px;
+  font-weight: 700;
+  color: #D87;
+  text-shadow: 0.05em 0.05em 0 #04A;
+}
+
+/* projects */
 
 .Projects {
   background-color: #88A;
@@ -106,7 +145,7 @@
   padding: 1.8% 0;
 }
 
-.GitTitle:hover, .Title:hover {
+.GitTitle:hover, .Title:hover, .ContactLink:hover {
   text-decoration: underline;
   cursor: pointer;
 }

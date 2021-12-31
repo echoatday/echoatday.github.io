@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
 class Portfolio extends React.Component {
   constructor(props) {
@@ -13,7 +13,7 @@ class Portfolio extends React.Component {
 
 
   componentDidMount() {
-    fetch("https://api.github.com/users/echoatday/repos")
+    fetch('https://api.github.com/users/echoatday/repos')
       .then(res => res.json())
       .then(
         (result) => {
@@ -39,15 +39,15 @@ class Portfolio extends React.Component {
       return <div>Loading...</div>;
     } else {
       return (
-        <div className="Projects">
-                <div className="GitFrame">
-                  <a href='https://github.com/AcademyPgh/Y5S2-DoorsOpen.Mobile' className="GitTitle">>doorsOpen.mobile</a>
+        <div className='Projects'>
+                <div className='GitFrame'>
+                  <a href='https://github.com/AcademyPgh/Y5S2-DoorsOpen.Mobile' className='GitTitle'>>doorsOpen.mobile</a>
                   <div>Mobile tour guide app for Doors Open PGH tours.</div>
                 </div>
 
                 {items.filter(filter => !filter.name.includes('echoatday')).map(item => (
-                  <div className="GitFrame">
-                    <a href={item.html_url} className="GitTitle">>{item.name}</a>
+                  <div className='GitFrame'>
+                    <a href={item.html_url} className='GitTitle'>>{item.name}</a>
                     <div>{item.description}</div>
                   </div>
                 ))}
@@ -62,15 +62,15 @@ class Portfolio extends React.Component {
 function PortfolioEntry(props) {
 
   return (
-    <div className="Entry">
+    <div className='Entry'>
       <a href={props.link}>arg</a>
     </div>
   )
 }
 
 function Projects() {
-  const githubs = ["https://github.com/AcademyPgh/Y5S2-DoorsOpen.Mobile", "https://github.com/echoatday/75words", "https://github.com/echoatday/helperbot", "https://github.com/echoatday/Academy-PGH-Randomizer-13"];
-  const itches = ["https://trashmaker.itch.io/zwitter", "https://trashmaker.itch.io/picolife", "https://birdking.itch.io/new-furniture"]
+  const githubs = ['https://github.com/AcademyPgh/Y5S2-DoorsOpen.Mobile', 'https://github.com/echoatday/75words', 'https://github.com/echoatday/helperbot', 'https://github.com/echoatday/Academy-PGH-Randomizer-13'];
+  const itches = ['https://trashmaker.itch.io/zwitter', 'https://trashmaker.itch.io/picolife', 'https://birdking.itch.io/new-furniture']
 
   var projectList = [];
 
@@ -83,7 +83,7 @@ function Projects() {
   })
 
   return (
-    <div className="Projects">
+    <div className='Projects'>
       {projectList}
     </div>
   );
