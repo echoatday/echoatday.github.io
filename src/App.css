@@ -1,5 +1,9 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Courier Prime';
+  color: #025;
 }
 
 .App-logo {
@@ -13,7 +17,7 @@
   }
 }
 
-.App-header {
+.App {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,6 +26,89 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.Header {
+  background-color: #DDE;
+  box-shadow: 0.15em 0.15em 0 #04A;
+  padding-left: 1em; padding-right: 1em;
+  padding-top: 0.4em; padding-bottom: 0.5em;
+  height: 2em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.Contact {
+  background-color: #AAA;
+  box-shadow: 0.15em 0.15em 0 #04A;
+  width: 10em;
+  height: 6em;
+  position: fixed;
+  right: 0;
+  top: 2em;
+  z-index: -1;
+}
+
+.Title {
+  font-size: 26px;
+  color: #426;
+  font-weight: 700;
+}
+
+/* about/projects styles */
+
+.About {
+  background-color: #779;
+  height: 100vh;
+  width: 100%;
+}
+
+.Projects {
+  background-color: #88A;
+  background: repeating-linear-gradient( 45deg, #779, #779 5px, #88A 5px, #88A 10px );
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap; /* make it a slideshow instead (: */
+  align-items: space-evenly;
+  justify-content: space-evenly;
+  padding: 2em 0;
+}
+
+.GitFrame {
+  font-size: 24px;
+  background: linear-gradient(
+    #DDE 17%, #04A 17% 19%, #DDE 19%
+  );
+  box-shadow: 0.15em 0.15em 0 #04A;
+  margin: 0.5em 0.5em;
+  padding: 0 1em;
+  height: 10em;
+  width: 16em;
+  display: flex;
+  flex-flow: row wrap;
+  flex-shrink: 0;
+}
+
+.GitTitle {
+  font-size: 26px;
+  height: 17%;
+  width: 100%;
+  color: #426;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1.8% 0;
+}
+
+.GitTitle:hover, .Title:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .App-link {
