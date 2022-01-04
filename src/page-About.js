@@ -7,8 +7,10 @@ const projScroll = () => {
 function About() {
   return (
     <div className='About'>
-      <div className='Greeting'>HIRE ME</div>
-      <a className='ScrollDown' onClick={projScroll}>projects<br/>▼</a>
+      <div className='Greeting'>Hi! I'm Echo.</div>
+      <a className='ScrollDown' onClick={projScroll}>a developer<br />▼</a>
+      <div className='GreetingBackground' />
+      <div className='GreetingBackgroundShadow' />
     </div>
   );
 }
