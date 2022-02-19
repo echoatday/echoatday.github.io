@@ -15,14 +15,11 @@ a {
 }
 
 .App {
-  background-color: #282c34;
+  background-color: #779;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .Header {
@@ -33,11 +30,10 @@ a {
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 63;
 }
 
 .HeaderShadow {
@@ -47,7 +43,7 @@ a {
   position: fixed;
   top: 0.15em;
   left: 0.15em;
-  z-index: 997;
+  z-index: 61;
 }
 
 .Contact {
@@ -59,7 +55,7 @@ a {
   position: fixed;
   right: 0;
   top: -4em;
-  z-index: 998;
+  z-index: 62;
   transition: transform 1s;
   display: flex;
   flex-flow: column nowrap;
@@ -178,17 +174,22 @@ a {
   padding: 1.8% 0;
 }
 
-.GitTitle:hover, .Title:hover, .ContactLink:hover, {
+.GitTitle:hover, .Title:hover, .ContactLink:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.ScrollDown:hover {
-  cursor: pointer;
+.GitLanguage {
+  position: absolute;
+  right: 0.3em;
+  bottom: 0.1em;
+  margin: 0;
+  font-size: 18px;
+  color: #779;
 }
 
-.App-link {
-  color: #61dafb;
+.ScrollDown:hover {
+  cursor: pointer;
 }
 
 @keyframes square-spin {

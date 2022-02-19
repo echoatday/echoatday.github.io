@@ -42,13 +42,15 @@ class Portfolio extends React.Component {
         <div className='Projects'>
                 <div className='GitFrame'>
                   <a href='https://github.com/AcademyPgh/Y5S2-DoorsOpen.Mobile' className='GitTitle'>>doorsOpen.mobile</a>
-                  <div>Mobile tour guide app for Doors Open PGH tours.</div>
+                  <div>Mobile tour guide app for Doors Open PGH.</div>
+                  <div className='GitLanguage'>JavaScript</div>
                 </div>
 
                 {items.filter(filter => !filter.name.includes('echoatday')).map(item => (
                   <div className='GitFrame'>
-                    <a href={item.html_url} className='GitTitle'>>{item.name}</a>
+                    <a href={item.html_url} className='GitTitle'>{item.name}</a>
                     <div>{item.description}</div>
+                    <div className='GitLanguage'>{item.language}</div>
                   </div>
                 ))}
               </div>

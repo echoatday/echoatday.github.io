@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.scss';
 import About from './page-About.js';
 import Projects from './page-Projects.js';
