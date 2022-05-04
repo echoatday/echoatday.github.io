@@ -1,9 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Courier+Prime');
 
+$bgcolor-dark: #779;
+$bgcolor-light: #88A;
+$bgcolor-object: #DDE;
+$bgcolor-object2: #D5D5E5;
+$bgcolor-shadow: #04A;
+
+$textcolor-regular: #025;
+$textcolor-header: #426;
+$textcolor-title: #F98;
+
+// $bgcolor-dark: #BFAF9F;
+// $bgcolor-light: #CBA;
+// $bgcolor-object: #EDD;
+// $bgcolor-object2: #E5D5D5;
+// $bgcolor-shadow: #A77;
+
+// $textcolor-regular: #521;
+// $textcolor-header: #412;
+// $textcolor-title: #412;
+
 * {
   box-sizing: border-box;
   font-family: 'Courier Prime';
-  color: #025;
+  color: $textcolor-regular;
 }
 
 html,body{
@@ -15,7 +35,7 @@ a {
 }
 
 .App {
-  background-color: #779;
+  background-color: $bgcolor-dark;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,7 +43,7 @@ a {
 }
 
 .Header {
-  background-color: #DDE;
+  background-color: $bgcolor-object;
   padding-left: 1em; padding-right: 1em;
   padding-top: 0.5em; padding-bottom: 0.5em;
   height: 2em;
@@ -37,7 +57,7 @@ a {
 }
 
 .HeaderShadow {
-  background-color: #04A;
+  background-color: $bgcolor-shadow;
   height: 2em;
   width: 100%;
   position: fixed;
@@ -47,9 +67,9 @@ a {
 }
 
 .Contact {
-  background-color: #DDE;
-  background: repeating-linear-gradient( -45deg, #DDE, #DDE 5px, #D5D5E5 5px, #D5D5E5 10px );
-  box-shadow: 0.15em 0.15em 0 #04A;
+  background-color: $bgcolor-object;
+  background: repeating-linear-gradient( -45deg, $bgcolor-object, $bgcolor-object 5px, $bgcolor-object2 5px, $bgcolor-object2 10px );
+  box-shadow: 0.15em 0.15em 0 $bgcolor-shadow;
   width: 8em;
   height: 6em;
   position: fixed;
@@ -70,14 +90,14 @@ a {
   padding: 0 1.66em;
   font-size: 60%;
   text-decoration: none;
-  color: #426;
+  color: $textcolor-header;
   font-weight: 700;
   text-align: right;
 }
 
 .Title {
   font-size: calc(26px * 1vw);
-  color: #426;
+  color: $textcolor-header;
   font-weight: 700;
   max-width: 50%;
   max-height: 100%;
@@ -86,8 +106,8 @@ a {
 /* about */
 
 .About {
-  background-color: #779;
-  background: linear-gradient( 0deg, #779, #779 45%, #88A 45%, #88A 55%, #779 55% );
+  background-color: $bgcolor-dark;
+  background: linear-gradient( 0deg, $bgcolor-dark, $bgcolor-dark 45%, $bgcolor-light 45%, $bgcolor-light 55%, $bgcolor-dark 55% );
   height: 100vh;
   width: 100%;
   display: flex;
@@ -99,14 +119,14 @@ a {
 .Greeting {
   font-size: 56px;
   font-weight: 700;
-  color: #F98;
-  text-shadow: 0.05em 0.05em 0 #04A;
+  color: $textcolor-title;
+  text-shadow: 0.05em 0.05em 0 $bgcolor-shadow;
   z-index: 3;
 }
 
 .GreetingBackground {
   position: absolute;
-  background-color: #779;
+  background-color: $bgcolor-dark;
   height: 10em;
   width: 10em;
   z-index: 2;
@@ -115,7 +135,7 @@ a {
 
 .GreetingBackgroundShadow {
   position: absolute;
-  background-color: #88A;
+  background-color: $bgcolor-light;
   height: 10.4em;
   width: 10.4em;
   z-index: 0;
@@ -125,7 +145,7 @@ a {
 .ScrollDown {
   font-size: 16px;
   font-weight: 700;
-  color: #04A;
+  color: $bgcolor-shadow;
   text-shadow: 0.05em 0.05em 0 #99B;
   text-align: center;
   position: absolute;
@@ -137,8 +157,8 @@ a {
 /* projects */
 
 .Projects {
-  background-color: #88A;
-  background: repeating-linear-gradient( 45deg, #779, #779 5px, #88A 5px, #88A 10px );
+  background-color: $bgcolor-light;
+  background: repeating-linear-gradient( 45deg, $bgcolor-dark, $bgcolor-dark 5px, $bgcolor-light 5px, $bgcolor-light 10px );
   min-height: 96vh;
   width: 100%;
   display: flex;
@@ -151,9 +171,9 @@ a {
 .GitFrame {
   font-size: 24px;
   background: linear-gradient(
-    #DDE 17%, #04A 17% 19%, #DDE 19%
+    $bgcolor-object 17%, $bgcolor-shadow 17% 19%, $bgcolor-object 19%
   );
-  box-shadow: 0.15em 0.15em 0 #04A;
+  box-shadow: 0.15em 0.15em 0 $bgcolor-shadow;
   margin: 0.5em 0.5em;
   padding: 0 1em;
   height: 10em;
@@ -169,7 +189,7 @@ a {
   font-size: 26px;
   height: 17%;
   width: 100%;
-  color: #426;
+  color: $textcolor-header;
   font-weight: 700;
   text-decoration: none;
   padding: 1.8% 0;
@@ -186,7 +206,7 @@ a {
   bottom: 0.1em;
   margin: 0;
   font-size: 18px;
-  color: #779;
+  color: $bgcolor-dark;
 }
 
 .ScrollDown:hover {
