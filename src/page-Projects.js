@@ -48,7 +48,7 @@ class Portfolio extends React.Component {
 
                 {items.filter(filter => !filter.name.includes('echoatday')).map(item => (
                   <div className='GitFrame'>
-                    <a href={item.html_url} className='GitTitle'>{item.name}</a>
+                    <a href={item.html_url} className='GitTitle'>>{item.name}</a>
                     <div>{item.description}</div>
                     <div className='GitLanguage'>{item.language}</div>
                   </div>

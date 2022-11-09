@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Courier+Prime');
 
-$bgcolor-dark: #779;
-$bgcolor-light: #88A;
+$bgcolor-dark: #77B;
+$bgcolor-light: #66A;
 $bgcolor-object: #DDE;
 $bgcolor-object2: #D5D5E5;
-$bgcolor-shadow: #04A;
+$bgcolor-shadow: #20A;
 
-$textcolor-regular: #025;
-$textcolor-header: #426;
-$textcolor-title: #F98;
+$textcolor-regular: #205;
+$textcolor-header: #50A;
+$textcolor-title: #FBA;
 
-// $bgcolor-dark: #BFAF9F;
-// $bgcolor-light: #CBA;
-// $bgcolor-object: #EDD;
-// $bgcolor-object2: #E5D5D5;
-// $bgcolor-shadow: #A77;
+// $bgcolor-dark: #111116;
+// $bgcolor-light: #223;
+// $bgcolor-object: #DEE;
+// $bgcolor-object2: #EFF;
+// $bgcolor-shadow: #A4A;
 
-// $textcolor-regular: #521;
-// $textcolor-header: #412;
-// $textcolor-title: #412;
+// $textcolor-regular: #215;
+// $textcolor-header: #327;
+// $textcolor-title: #DEE;
 
 * {
   box-sizing: border-box;
@@ -144,9 +144,9 @@ a {
 
 .ScrollDown {
   font-size: 16px;
-  font-weight: 700;
-  color: $bgcolor-shadow;
-  text-shadow: 0.05em 0.05em 0 #99B;
+  font-weight: 500;
+  color: $bgcolor-object;
+  text-shadow: 0.05em 0.05em 0 $textcolor-header;
   text-align: center;
   position: absolute;
   top: 69vh;
@@ -206,7 +206,7 @@ a {
   bottom: 0.1em;
   margin: 0;
   font-size: 18px;
-  color: $bgcolor-dark;
+  color: $bgcolor-shadow;
 }
 
 .ScrollDown:hover {
