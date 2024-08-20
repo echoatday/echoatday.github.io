@@ -130,7 +130,7 @@ a {
   height: 10em;
   width: 10em;
   z-index: 2;
-  animation: square-spin 6s infinite ease-in-out;
+  // animation: square-spin 6s infinite ease-in-out;
 }
 
 .GreetingBackgroundShadow {
@@ -139,7 +139,7 @@ a {
   height: 10.4em;
   width: 10.4em;
   z-index: 0;
-  animation: square-spin-shadow 6s infinite linear;
+  // animation: square-spin-shadow 6s infinite linear;
 }
 
 .ScrollDown {
@@ -182,7 +182,7 @@ a {
   display: flex;
   flex-flow: row wrap;
   flex-shrink: 0;
-  animation: git-spin 6s infinite ease-in-out;
+  // animation: git-spin 6s infinite ease-in-out;
 }
 
 .GitTitle {
